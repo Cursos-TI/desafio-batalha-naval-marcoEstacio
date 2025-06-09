@@ -10,6 +10,10 @@ int main()
     // Sugestão: Declare uma matriz bidimensional para representar o tabuleiro (Ex: int tabuleiro[5][5];).
     // Sugestão: Posicione dois navios no tabuleiro, um verticalmente e outro horizontalmente.
     // Sugestão: Utilize `printf` para exibir as coordenadas de cada parte dos navios.
+    // Nível Aventureiro - Expansão do Tabuleiro e Posicionamento Diagonal
+    // Sugestão: Expanda o tabuleiro para uma matriz 10x10.
+    // Sugestão: Posicione quatro navios no tabuleiro, incluindo dois na diagonal.
+    // Sugestão: Exiba o tabuleiro completo no console, mostrando 0 para posições vazias e 3 para posições ocupadas.
 
     // 1 coluna e 1 linha a mais para imprimir referências das coordenadas
     // as posições do tabuleiro serão de 1 a 10, e 0 para as referencias
@@ -27,9 +31,16 @@ int main()
     tabuleiro[8][3] = 3;
     tabuleiro[8][4] = 3;
     tabuleiro[8][5] = 3;
-    tabuleiro[2][3] = 3;
+    tabuleiro[5][3] = 3;
+    tabuleiro[6][3] = 3;
+    tabuleiro[7][3] = 3;
+    tabuleiro[1][1] = 3;
+    tabuleiro[2][2] = 3;
     tabuleiro[3][3] = 3;
-    tabuleiro[4][3] = 3;
+    tabuleiro[1][10] = 3;
+    tabuleiro[2][9] = 3;
+    tabuleiro[3][8] = 3;
+
 
     for (i = 0; i < 11; i++)
     {
@@ -47,11 +58,7 @@ int main()
         printf("\n");
     }
 
-    // Nível Aventureiro - Expansão do Tabuleiro e Posicionamento Diagonal
-    // Sugestão: Expanda o tabuleiro para uma matriz 10x10.
-    // Sugestão: Posicione quatro navios no tabuleiro, incluindo dois na diagonal.
-    // Sugestão: Exiba o tabuleiro completo no console, mostrando 0 para posições vazias e 3 para posições ocupadas.
-
+  
     // Nível Mestre - Habilidades Especiais com Matrizes
     // Sugestão: Crie matrizes para representar habilidades especiais como cone, cruz, e octaedro.
     // Sugestão: Utilize estruturas de repetição aninhadas para preencher as áreas afetadas por essas habilidades no tabuleiro.
